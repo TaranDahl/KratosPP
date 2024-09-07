@@ -38,7 +38,7 @@ public:
 
 	static double RandomDouble()
 	{
-		return RandomRanged(1, INT_MAX) / (double)((unsigned int)INT_MAX + 1);
+		return ScenarioClass::Instance->Random.RandomRanged(1, INT_MAX) / (double)((unsigned int)INT_MAX + 1);
 	}
 private:
 	inline static std::minstd_rand _engine{};
